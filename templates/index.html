@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integração HTML e Python</title>
+</head>
+<body>
+    <h1>ATIVIDADE 4</h1> <!-- Adiciona a variável texto aqui -->
+
+     <form action="verificar" method="post"> <!-- Formulário para enviar o número para verificação -->
+        <label for="numero">Informe a sua idade:</label> <!-- Rótulo do campo de entrada -->
+        <input type="number" id="numero" name="numero" required> <!-- Campo de entrada para o número -->
+        <button type="button">Verificar</button> <!-- Botão de envio do formulário -->
+    </form>
+
+    {%if resultado%}
+        <p>{{resultado}}</p>  <!-- Para exibir o resultado -->
+    {%endif%}
+
+</body>
+</html>
+
+
+
+
+
+
+
+
